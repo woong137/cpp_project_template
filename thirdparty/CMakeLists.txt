@@ -11,6 +11,7 @@ project(
   LANGUAGES CXX
   VERSION 1.0.0
   DESCRIPTION "C++ Project Template"
+  HOMEPAGE_URL "studio.holyground.com"
 )
 message(STATUS)
 message(STATUS "Started all process in ${PROJECT_NAME} CMakeLists.txt.")
