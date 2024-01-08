@@ -25,7 +25,7 @@ function(add_test_executable EXECUTABLE_NAME SOURCE_FILES)
   )
 endfunction()
 
-find_package(GTEST REQUIRED HINTS ${GTEST_CMAKE_PATH})
+find_package(GTEST QUIET HINTS ${GTEST_CMAKE_PATH})
 
 # add_test_executable(${PROJECT_NAME}_${TEST_TYPE}_TESTS ${${PROJECT_NAME}_${TEST_TYPE}_SOURCE_FILES})
 foreach(TEST_FILE_NAME ${${PROJECT_NAME}_${TEST_TYPE}_SOURCE_FILES})
